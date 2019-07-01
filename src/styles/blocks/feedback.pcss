@@ -1,0 +1,115 @@
+.feedback {
+    padding-top: 250px;
+    @include bg-img('../images/content/Budda.jpg');
+}
+.row-feedback {
+    @include flex(space-between);
+    width: 630px;
+}
+.feedback__title{
+    font-size: 36px;
+    font-weight: 800;
+    width: 402px;
+    margin-bottom: 100px;
+}
+
+.buttons-circle {
+    width: 157px;
+}
+.left-button, .right-button {
+    @include size(50px);
+    border: 1px solid #455066;
+    border-radius: 50%;
+}
+.left-button{
+    margin-right: 30px;
+    transform: rotate(180deg);
+}
+.slider{
+    width: 977px;
+    display: flex;
+    margin-bottom: 200px;
+}
+.feedback__card{
+    width: 350px;
+    margin-left: 126px;
+    position: relative;
+}
+.feedback__card-text {
+    font-family: 'Open Sans SemiBold';
+    color: $grey-color;
+    margin-bottom: 30px;
+}
+.user-info__name {
+    font-weight: 800;
+    color: $text-color;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.feedback__card-user{
+    display: flex;
+}
+.user-avatar{
+    @include size(75px);
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.user-info__work {
+   color: $grey-color; 
+   font-family: 'Open Sans SemiBold';
+}
+.callme{
+    width: 880px;
+    padding-bottom: 136px;
+}
+.mess-row{
+    @include flex(space-between);
+}
+input, textarea{
+    	width: 100%;
+        display: inline-block;
+        padding: 25px;
+    	padding-left:47px;
+    	background-color: transparent;
+    	background-image: url(https://png.icons8.com/windows/50/0063B1/edit);
+    	background-repeat: no-repeat;
+    	outline: none;
+    	color: $text-color;
+    	text-align: left;
+    	font-size: 18px;
+    	font-weight: 800;
+    	border: 0;
+    	border-bottom: 1px solid #414c63; 
+        margin-bottom: 40px !important;
+    }
+input {
+    width: 410px;
+}
+ textarea::placeholder,input::placeholder{
+     color: $text-color;
+     text-align: left;
+     font-size: 18px;
+     font-weight: 800;
+}
+textarea{
+    resize: none;
+}
+.form-name, .form-email, .form-text, .form-text{
+    font-size: 18px;
+    color: $light-grey;
+    font-family: 'Open Sans SemiBold';
+    padding-left: 45px;
+    margin-bottom: 25px;
+}
+.send {
+    width: 348px;
+    padding: 30px 120px;
+    background-color: #5500f2;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform:uppercase;
+    font-weight: 600;
+    border-top-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+    
+}

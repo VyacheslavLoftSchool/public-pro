@@ -1,0 +1,9 @@
+-var feedback = [{'text': 'Этот парень, проходил обучение не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!','name': 'Ковальчук Дмитрий','work': 'Основатель LoftSchool'},{'text': 'Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах.','name': 'Владимир Сабанцев','work': 'Преподаватель'}];
+each item in feedback
+    .feedback__card
+        .feedback__card-text #{item.text}
+        .feedback__card-user
+            .user-avatar
+            .user-info
+                .user-info__name #{item.name}
+                .user-info__work #{item.work}

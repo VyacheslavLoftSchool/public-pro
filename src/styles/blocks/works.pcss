@@ -1,0 +1,95 @@
+
+.works {
+    @include flex(space-between);
+    position: relative;
+    padding-bottom: 170px;
+}
+.works__title{
+    font-size: 36px;
+    color: $text-color;
+    margin-bottom: 100px;
+    font-weight: 800;
+}
+.works__window{
+    width: 977px;
+    position: relative;
+    
+}
+.works__window-pic{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 4;
+}
+.works__list{
+    width: 180px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+}
+.buttons{
+    width: 100px;
+    display: flex;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+}
+.left-arrow,.right-arrow{
+    @include size(50px);
+    background-color: #2d3c4e;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.left-arrow{
+    background-image: url(../images/content/keyboard-right-arrow-button.png);
+}
+.right-arrow{
+    background-image: url(../images/content/keyboard-right-arrow-button2.png);
+}
+.numbers-list{
+    width: 222px;
+    font-size: 400px;
+    color: #f5f6f7;
+    font-weight: 900;
+    position: absolute;
+    right: -90px;
+    top: 5%;
+    z-index: 1;
+}
+
+.works__desk {
+    width: 348px;
+    z-index: 5;
+}
+.tech-list{
+    display: flex;
+    margin-bottom: 50px;
+}
+.tech-list__item{
+    background-color: #f1f5f9;
+    padding: 18px;
+    margin-right: 20px;
+    border-radius: 45px;
+    font-size: 15px;
+    font-weight: 900;
+    color: $grey-color;
+}
+.works__desk-title{
+    width: 223px;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+.works__desk-text{
+    width: 348px;
+    color: $grey-color;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.works__desk-link{
+    width: 223px;
+    color: $links-color;
+    font-weight: 900;
+}

@@ -1,0 +1,159 @@
+.profile{
+    position: relative;
+    padding-top: 64px;
+    @include bg-img(../images/content/MountainBaloon.png);
+        &:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding-bottom: 120px;
+        background-color: #f8f8fa;
+        clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    }
+}
+
+header {
+    margin-bottom: 320px;
+}
+.title {
+    text-align:center;
+    font-size: 18px;
+    color: $grey-color;
+    margin-bottom: 37px;
+    font-family: 'Open Sans SemiBold';
+}
+.name {
+    text-align: center;
+    color: $text-color;
+    font-size: 72px;
+    font-size: bold;
+    margin-bottom: 332px;
+    font-family: 'Open Sans ExtraBold';
+}
+.head {
+    @include flex(space-between);
+}
+.container{
+    max-width: 1480px;
+    margin: auto;
+}
+nav {
+    width: 57.56%;
+}
+.menu {
+    @include flex(space-around);
+}
+.menu__item-link{
+    text-decoration: none;
+    color: $text-color;
+}
+.socials-list{
+   @include flex(space-between);
+    width: 164px;
+}
+.socials-list__item-link {
+      display: inline-block;
+      @include size(25px);
+      cursor: pointer;
+  &.inst{
+        background: svg-load('insta.svg', fill=$text-color, width=100%, height=100%);
+      &:hover {
+        background: svg-load('insta.svg', fill=#55ddcc, width=100%, height=100%);
+      }
+  }
+  &.vk{
+        background: svg-load('vk.svg', fill=$text-color, width=100%, height=100%);
+      &:hover {
+        background: svg-load('vk.svg', fill=#55ddcc, width=100%, height=100%);
+      }
+  }
+  &.github{
+        background: svg-load('github.svg', fill=$text-color, width=100%, height=100%);
+      &:hover {
+        background: svg-load('github.svg', fill=#55ddcc, width=100%, height=100%);
+      }
+  }
+  
+}
+.logo {
+    font-weight: bold;
+    font-size: 36px;
+    color: $text-color;
+    text-transform: uppercase;
+    font-family: 'Open Sans ExtraBold';
+}
+
+.scroll {
+    @include flex(center);
+    margin-bottom: 170px;
+    font-family: 'Open Sans SemiBold';
+}
+
+.scroll-text {
+    font-size: 18px;
+    color: $text-color;
+    margin-right: 22px;
+}
+
+.card{
+    width: 978px;
+    margin: auto;
+    padding-top: 55px;
+}
+.card__row {
+    display: flex;
+    margin-bottom: 80px;
+}
+.card__row-left{
+    width: 350px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card__row-right{
+    width: 600px;
+    padding-left: 55px;
+}
+.avatar {
+    @include size(200px);
+    border-radius: 50%;
+    @include bg-img(../images/content/avatar.png);
+}
+.card__hi{
+    color: $grey-color;
+    margin-bottom: 34px;
+}
+.card__name{
+    font-size: 36px;
+    color: $text-color;
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+.card__desc{
+    color: $grey-color;
+    line-height: 22px;
+}
+
+.location, .age, .birthday{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.location__left, .age__left, .birthday__left{
+    width: 97px;
+    color: $light-grey;
+}
+
+.location__right, .age__right, .birthday__right{
+    width: 223px;
+    margin-left: 45px;
+    color: $text-color;
+}
+.location, .age, .birthday {
+    display: flex;
+}
+.text-star {
+    color: $grey-color;
+}

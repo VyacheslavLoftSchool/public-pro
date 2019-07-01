@@ -1,0 +1,44 @@
+.icon-bg {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  background: svg-load('github.svg', fill=$text-color, width=100%, height=100%);
+  &:hover {
+    background: svg-load('github.svg', fill=#55ddcc, width=100%, height=100%);
+  }
+}
+
+
+
+.scroll-icon {
+  width: 20px;
+  height: 30px;
+  background: svg-load('scroll.svg', fill=$text-color, width=100%, height=100%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.arrow-icon {
+  width: 50px;
+  height: 50px;
+  
+  cursor: pointer;
+  background: svg-load('arrow-down.svg', fill=$text-color, width=7px, height=10px);
+  &:hover {
+    background: svg-load('arrow-down.svg', fill=#55ddcc, width=7px, height=10px);
+    background-repeat: no-repeat;
+  background-position: center;
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feedback__card:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 76px;
+    height: 66px;
+    background: svg-load('quote.svg', fill=$text-color, width=76px, height=66px);
+    background-repeat: no-repeat;
+    background-position: center;
+}

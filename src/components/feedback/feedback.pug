@@ -1,0 +1,23 @@
+section.feedback
+    .container
+        .row-feedback
+            .feedback__title Что обо мне говорят
+            .buttons-circle
+                button(type="button").left-button.arrow-icon
+                button(type="button").right-button.arrow-icon
+        .slider
+            include feedback__card.pug
+        .callme
+            .feedback__title Связаться со мной
+            form.mess-form
+                .mess-row
+                    .info-block
+                        .form-name Введите ваше имя
+                        input(placeholder="Ковальчук Дмитрий").input-name
+                    .info-block
+                        .form-email Введите ваш email
+                        input(placeholder="loftschool@stydy.com").input-email
+                .info-block
+                    .form-text Сообщение к письму
+                    textarea(placeholder="Требуется ваша помощь в создании сайта. Интересуют сроки и цена вопроса.").textfield
+                button(type="submit").send Отправить
